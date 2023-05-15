@@ -38,7 +38,7 @@ import org.springframework.web.bind.annotation.RestController;
     public String multiply(@RequestParam(value = "num1", required = false) Integer a,
                            @RequestParam(value = "num2", required = false) Integer b){
         if(a==null || b==null){
-            return "Не передан один из параметров!";
+            return "Не передан один из параметров!!!";
         }
         return a+" * "+b+" = "+calculatorService.multiply(a,b);
     }
